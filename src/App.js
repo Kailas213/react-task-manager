@@ -8,7 +8,6 @@ import FilterControls from './components/FilterControl';
 function App(){
   return(
     <div>
-      Out site of Provider
       <TaskProvider>
         <div className='App'>
           <header className='app-header'>
