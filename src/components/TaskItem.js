@@ -56,8 +56,8 @@ function TaskItem({task}){
                 </select>
 
                 <div className='edit-actions'>
-                    <button onClick={handkeEdit}>Save</button>
-                    <button onClick={handleCancel}>Cancel</button>
+                    <button className='btn btn-submit-save' onClick={handkeEdit}>Save</button>
+                    <button className='btn btn-cancel' onClick={handleCancel}>Cancel</button>
                 </div>
 
             </div>
@@ -78,9 +78,9 @@ function TaskItem({task}){
                     <small>Created:{new Date(task.createdAt).toLocaleDateString()}</small>
                 </div>
                 <div className='task-actions'>
-                    <button onClick={()=>toggleTask(task.id)} className={`toggle-btn ${task.completed? 'completed':''}`}>{task.completed?'completed':'pending'}</button>
-                    <button onClick={()=>setIsEditing(true)}>Edit</button>
-                    <button onClick={()=>deleteTask(task.id)}>Delete</button>
+                    <button className="btn btn-task" onClick={()=>toggleTask(task.id)} className={`toggle-btn ${task.completed? 'completed':''}`}>{task.completed?'completed':'pending'}</button>
+                    <button className="btn btn-task"  onClick={()=>setIsEditing(true)}>Edit</button>
+                    <button className="btn btn-task"  onClick={()=>deleteTask(task.id)}>Delete</button>
 
 
                 </div>

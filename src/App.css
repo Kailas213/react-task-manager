@@ -320,3 +320,86 @@ body{
   margin-top: 1rem;
   flex-wrap: wrap;
 }
+
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+/* Common Button Style */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+/* Submit Button */
+.btn-submit-save {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-submit-save:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.btn-submit-save:active {
+  transform: scale(0.98);
+}
+
+/* Cancel Button */
+.btn-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.btn-cancel:active {
+  transform: scale(0.98);
+}
+
+/* Task Button */
+.btn-task {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-task:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn-task:active {
+  transform: scale(0.98);
+}
+
+/* Disabled Button */
+.btn:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.7;
+}
+
+
