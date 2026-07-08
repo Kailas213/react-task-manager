@@ -26,7 +26,7 @@ function FilterControl(){
 
             <div className="action-section">
                 <button onClick={undoAction}
-                disabled={!canUndo} className="undo-btn">Undo</button>
+                disabled={!canUndo} className="btn btn-task undo-btn">Undo</button>
             </div>
 
 

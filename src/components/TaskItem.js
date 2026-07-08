@@ -78,7 +78,7 @@ function TaskItem({task}){
                     <small>Created:{new Date(task.createdAt).toLocaleDateString()}</small>
                 </div>
                 <div className='task-actions'>
-                    <button className="btn btn-task" onClick={()=>toggleTask(task.id)} className={`toggle-btn ${task.completed? 'completed':''}`}>{task.completed?'completed':'pending'}</button>
+                    <button onClick={()=>toggleTask(task.id)} className={`btn btn-task toggle-btn ${task.completed? 'completed':''}`}>{task.completed?'completed':'pending'}</button>
                     <button className="btn btn-task"  onClick={()=>setIsEditing(true)}>Edit</button>
                     <button className="btn btn-task"  onClick={()=>deleteTask(task.id)}>Delete</button>
 
